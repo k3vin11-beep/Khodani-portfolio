@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khodani Sindisiwe Simerone | Law &amp; Tax Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5f2;--surface:#ffffff;--ink:#1c2827;--muted:#5b6866;--line:#d9dcd6;--accent:#1f5b4f;--accent-ink:#ffffff;--gold:#a67c2e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121917;--surface:#1a2321;--ink:#e8ece9;--muted:#a1aeab;--line:#2c3935;--accent:#6fc0ab;--accent-ink:#0f1a17;--gold:#d3a95a}}
+:root[data-theme="dark"]{--bg:#121917;--surface:#1a2321;--ink:#e8ece9;--muted:#a1aeab;--line:#2c3935;--accent:#6fc0ab;--accent-ink:#0f1a17;--gold:#d3a95a}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Newsreader,Georgia,"Times New Roman",serif;font-weight:500;margin:0;line-height:1.15}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.layout{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:300px 1fr;gap:64px;padding:56px 28px}
+aside{position:sticky;top:40px;align-self:start}
+aside h2{font-size:1.05rem;margin:0 0 10px;color:var(--muted);font-family:"Instrument Sans",sans-serif;font-weight:600}
+.contact{list-style:none;padding:0;margin:0;font-size:.95rem}
+.contact li{padding:9px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.contact span{display:block;font-size:.8rem;color:var(--muted)}
+.contact a{color:var(--ink);text-decoration-color:var(--line);text-underline-offset:3px}
+.contact a:hover{text-decoration-color:var(--accent)}
+.hero{--hero:#10302a;position:relative;min-height:500px;padding:48px 44px;border-radius:4px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;
+background:linear-gradient(90deg,var(--hero) 0%,var(--hero) 40%,rgba(16,48,42,.6) 62%,rgba(16,48,42,0) 88%),url(images/khodani.jpg) right center/auto 100% no-repeat,var(--hero)}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.6rem);font-weight:500;letter-spacing:-.02em;max-width:11em}
+.hero .role{font-family:Newsreader,Georgia,serif;font-size:1.35rem;color:#e6cd90;margin:14px 0 18px;max-width:20em}
+.hero p{font-size:1.1rem;max-width:30em;margin:0 0 28px}
+.hero .btn{border-color:#fff;color:#fff}
+.hero .btn.primary{background:#fff;color:var(--hero)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:3px;font-weight:600;text-decoration:none;border:1.5px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{filter:brightness(1.1)}
+button.btn{font:inherit;font-weight:600;background:transparent;cursor:pointer}
+.cta button.btn{color:var(--accent-ink)}
+.cv-btn[hidden]{display:none}
+.cv-note{font-size:.85rem;margin-top:10px;min-height:1.2em;color:var(--muted)}
+section{margin-top:84px}
+section>h2{font-size:2rem;padding-bottom:12px;border-bottom:2px solid var(--ink);margin-bottom:28px}
+.focus{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:var(--surface)}
+.focus div{padding:22px;border-right:1px solid var(--line)}
+.focus div:last-child{border-right:0}
+.focus h3{font-size:1.25rem;margin-bottom:6px}
+.focus p{margin:0;font-size:.95rem;color:var(--muted)}
+.role-item{display:grid;grid-template-columns:150px 1fr;gap:8px 28px;padding:26px 0;border-bottom:1px solid var(--line)}
+.role-item:first-of-type{padding-top:0}
+.when{font-size:.9rem;color:var(--muted);padding-top:5px}
+.role-item h3{font-size:1.4rem}
+.org{color:var(--gold);font-weight:600;font-size:.95rem;margin:2px 0 10px}
+.role-item ul{margin:0;padding-left:1.1em}
+.role-item li{margin-bottom:5px}
+.work{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--gold);padding:26px 28px}
+.work h3{font-size:1.5rem;margin-bottom:6px}
+.work p{margin:0 0 10px;max-width:62ch}
+.work .meta{color:var(--muted);font-size:.9rem}
+.cert{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.cert div{background:var(--surface);border:1px solid var(--line);padding:22px}
+.cert h3{font-size:1.2rem;margin-bottom:8px}
+.cert ul{margin:0;padding-left:1.1em;color:var(--muted);font-size:.95rem}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.edu div{padding:18px 0;border-top:1px solid var(--line)}
+.edu h3{font-size:1.2rem}
+.edu p{margin:4px 0 0;color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.skills li{padding:8px 16px;border:1px solid var(--line);background:var(--surface);border-radius:999px;font-size:.95rem}
+.lead{margin:22px 0 10px;font-weight:600}
+.service-line{margin-top:18px;color:var(--muted)}
+footer{margin-top:90px;padding-top:26px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.cta{background:var(--accent);color:var(--accent-ink);padding:34px 32px;border-radius:4px}
+.cta h2{border:0;padding:0;margin:0 0 8px;font-size:1.9rem}
+.cta p{margin:0 0 18px;max-width:52ch}
+.cta a{color:var(--accent-ink)}
+.cta .btn{border-color:var(--accent-ink);color:var(--accent-ink)}
+.cta .btn.primary{background:var(--accent-ink);color:var(--accent)}
+.ref{margin-top:18px;font-size:.95rem}
+@media (max-width:900px){
+.layout{grid-template-columns:1fr;gap:36px;padding:32px 20px}
+aside{position:static}
+.hero{min-height:560px;padding:28px 22px;background:linear-gradient(180deg,rgba(16,48,42,0) 18%,rgba(16,48,42,.75) 55%,var(--hero) 82%),url(images/khodani.jpg) center top/cover no-repeat,var(--hero)}
+.hero h1,.hero .role,.hero p{max-width:none}
+.focus,.cert,.edu{grid-template-columns:1fr}
+.focus div{border-right:0;border-bottom:1px solid var(--line)}
+.focus div:last-child{border-bottom:0}
+.role-item{grid-template-columns:1fr;gap:4px}
+section{margin-top:60px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+<div>
+<h2>Contact</h2>
+<ul class="contact">
+<li><span>Email</span><a href="mailto:knsindisiwe@gmail.com">knsindisiwe@gmail.com</a></li>
+<li><span>Phone</span><a href="tel:+27711950342">071 195 0342</a></li>
+<li><span>LinkedIn</span><a href="https://www.linkedin.com/in/khodani-simerone-b4a0b32a7" target="_blank" rel="noopener">khodani-simerone</a></li>
+<li><span>Location</span>Hatfield, Pretoria</li>
+</ul>
+</div>
+</aside>
+
+<main>
+<header class="hero">
+<h1>Khodani Sindisiwe Simerone</h1>
+<div class="role">Final-year BCom Law student, University of Pretoria</div>
+<p>I work where commercial, financial and legal questions meet. I research tax law, write clearly about it, and pay close attention to detail.</p>
+<div class="btns">
+<a class="btn primary" href="#work">See my work</a>
+<a class="btn ghost" href="#contact">Get in touch</a>
+<a class="btn ghost" href="cv.pdf" download="Khodani-Simerone-CV.pdf">Download CV</a>
+</div>
+</header>
+
+<section id="focus">
+<h2>Focus areas</h2>
+<div class="focus">
+<div><h3>Tax law</h3><p>Legal research and articles on taxation, including residency-based tax.</p></div>
+<div><h3>Legal research</h3><p>Reading legislation, summarising cases and writing concise legal content.</p></div>
+<div><h3>Commercial law</h3><p>Studying how business and financial rules shape individuals and industries.</p></div>
+</div>
+</section>
+
+<section id="work">
+<h2>Selected work</h2>
+<div class="work">
+<h3>Taxation in South Africa for Residents and Non-Residents: A Comprehensive Overview</h3>
+<p>A published legal article that explains how South African tax applies differently to residents and non-residents.</p>
+<p class="meta">Written during the Record of Law legal research internship, February 2026.</p>
+</div>
+<div class="cert">
+<div><h3>PwC US Tax Job Simulation</h3>
+<ul><li>Prepared a client tax return</li><li>Calculated book-to-tax differences and taxable income</li><li>Wrote a summary of findings for the client</li></ul></div>
+<div><h3>Record of Law Internship Certificate</h3>
+<ul><li>Completed a remote legal research internship</li><li>Drafted case summaries and analysed legislation</li></ul></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="role-item">
+<div class="when">Feb 2026 to present</div>
+<div><h3>STARS Mentor</h3><div class="org">University of Pretoria</div>
+<ul><li>Mentor first-year law students in the STARS Mentorship Programme.</li><li>Guide students through university life, academics and career paths.</li><li>Help students set goals and manage their time.</li></ul></div>
+</div>
+<div class="role-item">
+<div class="when">Feb 2026</div>
+<div><h3>Legal Research Intern</h3><div class="org">Record of Law (remote)</div>
+<ul><li>Researched and wrote legal articles on tax law.</li><li>Drafted case summaries and analysed legislation.</li><li>Wrote clear, concise legal content.</li></ul></div>
+</div>
+<div class="role-item">
+<div class="when">June 2025</div>
+<div><h3>Legal Job Shadowing</h3><div class="org">Rathidili Attorneys Inc., Pretoria</div>
+<ul><li>Prepared document indexes for notices and pleadings to support case preparation.</li><li>Kept appointment calendars current, arranged meetings and handled client paperwork.</li><li>Used CourtOnline.</li></ul></div>
+</div>
+<div class="role-item">
+<div class="when">2024 to present</div>
+<div><h3>ASEZ Student Volunteer</h3><div class="org">University of Pretoria</div>
+<ul><li>Vice-Chairperson (2024) and Chairperson (2025/26) of the World Mission Society at the university.</li><li>Ran climate response activities: tree planting, invasive alien plant removal and clean-up campaigns.</li><li>Held a zero-plastic forum, crime reduction programmes, blood drives and panels.</li><li>Supported vulnerable groups in the community.</li></ul></div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education and skills</h2>
+<div class="edu">
+<div><h3>Bachelor of Commerce in Law</h3><p>University of Pretoria, 2024 to 2027</p></div>
+<div><h3>Bachelor of Commerce: Extended Programme</h3><p>University of Pretoria, 2023 to 2024</p></div>
+</div>
+<p class="lead">Skills</p>
+<ul class="skills">
+<li>Legal research and writing</li><li>Tax accounting</li><li>Analytical skills</li><li>Attention to detail</li><li>Documentation</li><li>Time management</li><li>Presentation</li><li>Leadership</li><li>Teamwork</li>
+</ul>
+<p class="service-line">Languages: English and Venda.</p>
+</section>
+
+<section id="contact">
+<div class="cta">
+<h2>Let's talk</h2>
+<p>I'm open to internships, vacation work and graduate opportunities in tax, commercial and legal teams.</p>
+<div class="btns">
+<a class="btn primary" href="mailto:knsindisiwe@gmail.com">Email Khodani</a>
+<a class="btn ghost" href="https://www.linkedin.com/in/khodani-simerone-b4a0b32a7" target="_blank" rel="noopener">View LinkedIn</a>
+<a class="btn ghost" href="cv.pdf" download="Khodani-Simerone-CV.pdf">Download CV</a>
+</div>
+<p class="ref" style="margin-top:22px;margin-bottom:0">Reference: Mmami Rathidili, Rathidili Attorneys Inc. (<a href="mailto:info@rathidiliinc.co.za">info@rathidiliinc.co.za</a>)</p>
+</div>
+</section>
+
+<footer>Khodani Sindisiwe Simerone, Pretoria, South Africa</footer>
+</main>
+</div>
+</body>
+</html>
