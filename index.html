@@ -17,7 +17,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "Instrume
 h1,h2,h3{font-family:Newsreader,Georgia,"Times New Roman",serif;font-weight:500;margin:0;line-height:1.15}
 a{color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.layout{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:300px 1fr;gap:64px;padding:56px 28px}
+.layout{width:100%;max-width:none;margin:0;display:grid;grid-template-columns:300px minmax(0,1fr);gap:clamp(32px,4vw,72px);padding:48px clamp(20px,4vw,64px)}
 aside{position:sticky;top:40px;align-self:start}
 aside h2{font-size:1.05rem;margin:0 0 10px;color:var(--muted);font-family:"Instrument Sans",sans-serif;font-weight:600}
 .contact{list-style:none;padding:0;margin:0;font-size:.95rem}
@@ -26,7 +26,7 @@ aside h2{font-size:1.05rem;margin:0 0 10px;color:var(--muted);font-family:"Instr
 .contact a{color:var(--ink);text-decoration-color:var(--line);text-underline-offset:3px}
 .contact a:hover{text-decoration-color:var(--accent)}
 .hero{--hero:#10302a;position:relative;min-height:500px;padding:48px 44px;border-radius:4px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;
-background:linear-gradient(90deg,var(--hero) 0%,var(--hero) 40%,rgba(16,48,42,.6) 62%,rgba(16,48,42,0) 88%),url(images/khodani.jpg) right center/auto 100% no-repeat,var(--hero)}
+background:linear-gradient(90deg,var(--hero) calc(100% - 460px),rgba(16,48,42,.7) calc(100% - 330px),rgba(16,48,42,0) calc(100% - 200px)),url(images/khodani.jpg) right center/auto 100% no-repeat,var(--hero)}
 .hero h1{font-size:clamp(2.2rem,4.6vw,3.6rem);font-weight:500;letter-spacing:-.02em;max-width:11em}
 .hero .role{font-family:Newsreader,Georgia,serif;font-size:1.35rem;color:#e6cd90;margin:14px 0 18px;max-width:20em}
 .hero p{font-size:1.1rem;max-width:30em;margin:0 0 28px}
@@ -80,7 +80,7 @@ footer{margin-top:90px;padding-top:26px;border-top:1px solid var(--line);color:v
 .cta .btn.primary{background:var(--accent-ink);color:var(--accent)}
 .ref{margin-top:18px;font-size:.95rem}
 @media (max-width:900px){
-.layout{grid-template-columns:1fr;gap:36px;padding:32px 20px}
+.layout{grid-template-columns:minmax(0,1fr);gap:36px;padding:32px 20px}
 aside{position:static}
 .hero{min-height:560px;padding:28px 22px;background:linear-gradient(180deg,rgba(16,48,42,0) 18%,rgba(16,48,42,.75) 55%,var(--hero) 82%),url(images/khodani.jpg) center top/cover no-repeat,var(--hero)}
 .hero h1,.hero .role,.hero p{max-width:none}
